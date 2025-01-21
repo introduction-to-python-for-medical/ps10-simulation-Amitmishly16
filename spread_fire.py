@@ -1,7 +1,6 @@
 import copy
 
 def spread_fire(grid, grid_size):
-    """Update the forest grid based on fire spreading rules."""
     update_grid = copy.deepcopy(grid)
 
     for i in range(grid_size):  # Iterate through entire grid, including last row
