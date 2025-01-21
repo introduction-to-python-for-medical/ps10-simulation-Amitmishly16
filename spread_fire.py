@@ -1,10 +1,4 @@
-import copy
-
-
-def spread_fire(grid, grid_size):
-    update_grid = copy.deepcopy(grid)
-
-    for i in range(grid_size):
+ for i in range(grid_size):
         for j in range(grid_size):
             if grid[i][j] == 1:
                 # Check neighboring cells (up, down, left, right) for fire (value 2)
@@ -26,5 +20,3 @@ def spread_fire(grid, grid_size):
                 # If one of the neighbors is fire (2), spread the fire
                 if 2 in neighbors:
                     update_grid[i][j] = 2
-
-    return update_grid
